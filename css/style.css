@@ -23,14 +23,15 @@ header nav {
 }
 
 header nav .nav-right-section {
-  width: 30rem;
+  width: 28rem;
   height: auto;
   display: flex;
   list-style: none;
   justify-content: space-around;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
+
 a {
   text-decoration: none;
 }
@@ -44,8 +45,9 @@ nav .nav-right-section .menu-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.6;
 }
 
 nav .nav-right-section img {
@@ -53,7 +55,7 @@ nav .nav-right-section img {
 }
 
 main {
-  margin-top: 25rem;
+  margin-top: 20rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -69,7 +71,7 @@ main .main-logo img {
 }
 
 main .main-input {
-  width: 90%;
+  width: 80%;
   display: flex;
   align-items: center;
   margin-bottom: 2.5rem;
@@ -78,11 +80,12 @@ main .main-input {
 main .main-input-container {
   width: 100%;
   border-radius: 10rem;
-  border: 0.2rem solid #dfe1e5;
+  border-color: #eaeaeb;
+  border: 0.1rem solid #dfe1e5;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 4rem;
+  height: 4.3rem;
 }
 
 main .main-input input {
@@ -91,6 +94,116 @@ main .main-input input {
   border: none;
   outline: none;
   font-size: 2rem;
+}
+
+main .main-input-container:hover {
+  box-shadow: 0 1.5rem 2.8rem #eaeaeb;
+  border-color: #eaeaeb;
+}
+
+main .main-input .search-icon {
+  background-image: url("https://img.icons8.com/ios-filled/48/000000/search--v1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2.5rem;
+  height: 40%;
+  opacity: 0.6;
+}
+
+main .main-input .micro-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 2.5rem;
+  height: 40%;
+  cursor: pointer;
+}
+
+main .main-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 15%;
+}
+
+main .main-buttons button {
+  color: #525558;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  min-width: 15rem;
+  background-color: #f8f9fa;
+  height: 4rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+main .main-buttons button:hover {
+  border: 0.1rem solid #dadce0;
+  box-shadow: 0 0.1rem 0.1rem #dadce0;
+}
+
+main .parrafo-espanol {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  color: #282828;
+}
+
+main .parrafo-espanol a {
+  color: #2e46ad;
+}
+
+footer {
+  width: 100%;
+  min-height: 5rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer p {
+  color: #888;
+  font-size: 1.4rem;
+  margin-left: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.content-ul {
+  font-size: 1.4rem;
+  border-top: 0.1rem solid #dadce0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-ul ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 0;
+  padding: 0;
+}
+
+.content-ul ul li {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.content-ul ul li a {
+  color: #888;
 }
 
 @media (min-width: 600px) {
